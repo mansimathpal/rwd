@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html  ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src="lib/js/ui-grid/3.0.7/ui-grid.js"></script>
+   <!-- <script src="search.js"> </script>-->
+    <style>
+        img{ width: 60px;height: 20px;}
+        </style>
+</head>
+<body ng-controller="myController">
+   Search <input type="text" placeholder="search here " ng-model="searchtext" /> 
+<div id="content" ng-repeat="image in images   | filter:searchtext" ng-controller="myController">
+ name:{{image.name}} <img src="{{image.image}} "><br><br>
+
+</div>
+<script>
+
+var myApp = angular.module("myModule", [])
+myApp.controller("myController", function ($scope) {
+             var images=[
+                 {name:"Ruchit",image:"contact.jpg"},
+              {name:"Ishan",image:"contact.jpg"},
+                 {name:"sagar",image:"contact.jpg"},
+                 {name:"sazid",image:"contact.jpg"},
+                 {name:"manish",image:"contact.jpg"},
+                 {name:"vipin",image:"contact.jpg"},
+                {name:"lakshya",image:"contact.jpg"},
+             ];
+             
+             
+             $scope.images=images;
+             
+             
+             
+             } );
+    </script>
+    
+</body>
+</html>

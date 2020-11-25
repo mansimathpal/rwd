@@ -1,0 +1,38 @@
+#banner{
+    width: 200px;
+    text-align: center;
+    top: 1px;
+    }
+    #banner a img
+    {
+    margin-top: 4px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+.image{
+   position: absolute;
+   bottom: 80px;
+   }
+.left{
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    font-weight: bold;
+    padding: 50px 20px 0 0;
+    color: rgb(172, 12, 12);
+    font-size: 30px;
+}
+.link{
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-weight: bold;
+    word-spacing:20px;
+    font-size:30px;	
+    background-color:YELLOWgreen;
+    border: 2px solid black;
+}
+.link:hover
+{
+background-color:yellow;
+}

@@ -1,0 +1,27 @@
+.mainDiv
+{
+
+}
+
+.heading
+{
+font-size:40px;
+color: yellowgreen;
+}
+.heading:hover
+{
+color: red;
+}
+
+.link
+{
+font-size: 30px;
+text-align:center;
+word-spacing:110px;
+background-color: blue;
+}
+.link:hover
+{
+background-color: red;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='jquery-2.1.1.js'></script>
+    <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+    <script src='typing.js' ></script>
+    <style>
+        #testcontest{
+            display: none;
+        }
+        span{
+            float: right;
+            display: block;
+            color: aquamarine;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Typing test</h1>
+    <button value="start " id="start" onclick="startWorker()"> start the test</button>
+    <div id="testcontest">
+        <h2> Instructions</h2>
+        <p>1.You will get 30 seconds for typing the required text</p>
+
+        <p>2.Your typed text should match the provided text.</p>
+        <h2>Sameple Text</h2>
+        <p >You have to admit that I Karandeep singh is the best . You who are reading this is no where near me.</p>
+  
+            <label>Enter your answer here:</label><br><br>
+        <input type="text" style=position:absolute;left:5%;width:20%;  id="t">
+       
+        <span id="result"></span>
+        </div>
+    </body>
+</html>

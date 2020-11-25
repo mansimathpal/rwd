@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="health.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+        <div id="header">
+                <img class="img1" src="love.jpg">
+                    <h3>Health Priority</h3>
+                     <p class="align"> Contact us@ 9910920395</p><br>
+                    </div>
+       <div id="navbar">
+           <div id="notshow">
+           <ul>
+               <li><a href="#">Home</li>     
+                <li><a href="#">Herbs</li>   
+                    <li><a href="#">Beauty Products</li>    
+                        <li><a href="#">Baby Products</li>          
+                            <li><a href="#">Supplements</li>   
+                                <li><a href="#">About Us</li> 
+                                    <li><a href="contact.html">Contact Us</li>     
+                                        <li><a href="#"><input type="text" class="small" placeholder="Search.."/></li>    
+                                           
+           </ul><br><br>
+         
+           </div>
+           <div class="show">
+           <a href="#"><button type="button"  class="menu"  placeholder="Search..">Menu</button> 
+         </a> </div>
+         <div id="form">
+                <form class="form" method="POST" action="#login">
+                <h2 class="head">Contact Us</h2>
+                Your Name:<input type="text" id="id" required><br><br>
+                Your E-mail :<input type="email" id="pass"  required   placeholder="Enter your email"><br><br>
+                Your Message:<br>
+               <textarea cols="20" rows="4" reuired id="text"></textarea><br><br>
+                <input type="button" id="login" value="Submit">
+                </form>
+                </div>
+                
+                <script>
+                        $(document).ready(function(){
+                 $("#login").click(function(){
+                var a =$('input');
+                var a1=$("#id").val();
+                var a2=$("#pass").val();
+                var a3=$("#text").val();
+                if (a3.length <30) {
+                    alert('message length should be greater than 30 characters');
+                }
+                else if ((a2=='' || a1=='')) {
+                    alert('user name and e-mail id cannot be empty');
+                } 
+                else if (!a2.includes('mail.com') ) {
+                    alert('invalid e-mail id');
+                } 
+                    
+                else{
+                    alert('Thanks  user for the feedback  '+ a1 + '!!!!!');
+                }
+    
+                          });
+    
+    
+    
+                        });
+                    
+                          
+    
+    </script>
+        
+
+                
+</body>
+</html>

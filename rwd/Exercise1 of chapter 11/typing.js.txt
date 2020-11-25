@@ -1,0 +1,58 @@
+$(document).ready(function () {
+    $("#start").click(function () {
+        $("#testcontest").show();
+        $("#stop").show();
+    })
+
+
+});
+var w;
+//var x;
+
+function startWorker() {
+    if (typeof (Worker) !== "undefined") {
+        if (typeof (w) == "undefined")
+            w = new Worker("timertext.js");
+    }
+    w.onmessage = function (event) {
+        if (event.data != 0) {
+            if (event.data >= 10)
+
+                document.getElementById("result").innerHTML = "time remaining 0:" + event.data;
+            else
+                document.getElementById("result").innerHTML = "time remaining 0:" + event.data;
+            console.log(event.data);
+        }
+
+        else {
+            alert("time is up test is submitted");
+            validate();
+            window.close();
+            stopWorker();
+
+
+        }
+    }
+    function stopWorker() {
+        w.terminate();
+        w = undefined;
+        validate();
+        window.close();
+
+    }
+
+    function validate() {
+
+        var count = 0;
+        var t1 = $("#t").val();
+
+        console.log(t1);
+
+
+        if (t1 == "You have to admit that I Karandeep singh is the best . You who are reading this is no where near me.") {
+            count = count + 1;
+        }
+       
+        alert("your score is " + count * 100);
+    }
+};

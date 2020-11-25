@@ -1,0 +1,102 @@
+h1{
+    font-size: 70px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color:ivory;
+border:1px  black;
+}
+h3{
+    font-size: 70px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color:rgb(26, 26, 20);
+border:1px  black;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+p{
+    color:ivory;
+    font: outline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+#navigation{
+    background-color: aquamarine ;
+}
+.form-group{
+    float: right;
+}
+#context{
+    width:50%;
+}
+img{
+    width:50%;
+}
+#side{
+    float :right;
+    width:50%;
+    background-color: powderblue;
+    margin-right:-80%;
+}
+#about{
+    width:100%;
+    background-color: palegoldenrod;
+}
+.para1{
+    padding: 10px;
+    color:black;
+}
+.para2{
+    padding: 10px;
+    color:black;
+}
+@media screen and (max-width:770px)
+{
+    #side{
+        width:80%;
+        margin-top: 640px;
+        float: left;
+       
+    }
+    #about{
+        width:200%;
+        background-color: palegoldenrod;
+    }
+   .navbar-header{
+       display: inline-table;
+       float:right;
+   }
+   #navigation ul li{
+    display: inline;
+}
+.container-fluid{
+    width:fit-content;
+    height: 10%;
+    margin-bottom: -40px;
+}
+.form-group{
+    float:right;
+    width:50%;
+}
+.container-fluid ul{
+    width:10%;
+    height: 1%;
+    margin-bottom: -40px;
+    margin-inline-end: 12px;
+    scroll-margin-top: 2px;
+    display:inline-table;
+    text-orientation: sideways;
+       direction: ltr;
+  display:inline-flexbox ;
+
+}
+#navigation{
+    width:100%;
+    height:60%;
+    padding: 0px;
+}
+   .best{
+       margin-bottom: 32px;
+   }
+}

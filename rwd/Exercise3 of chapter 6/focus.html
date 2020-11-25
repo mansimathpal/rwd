@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <style>
+        span{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+        body{
+    background-color:aquamarine ;
+    
+}
+h1{
+    color: violet;
+    text-align: center;
+}
+#container{
+    width:80%;
+    background-color: yellow;
+    padding:5%;
+    margin:5%;
+}
+table {
+    border-collapse: collapse;
+    font-family:Arial;
+    background-color: darksalmon;    
+   
+    
+}
+
+td {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+        </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+                <h1> JQuery form events Demo</h1>
+                    </div>
+    <table>
+        <tr>
+            <td>Textbox</td>
+            <td>
+                <input id="txtFirstName" type="text" class="inputRequired" /> <span>Got Focus</span> <p>Lost Focus</p>
+            </td>
+        </tr>
+        <tr>
+                <td> 
+                    TextArea
+                </td>
+                <td> <span>Got Focus</span>  <p>Lost Focus</p>
+                    <textarea id="txtComments" class="inputRequired"></textarea>
+                </td>
+            </tr>
+        <tr>
+            <td>Country</td>
+            <td> <span>Got Focus</span>  <p>Lost Focus</p>
+                <select id="ddlCity" class="inputRequired">
+                    <option value="Select">Select</option>
+                    <option value="Usa">Usa</option>
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Indonesia">Indonesia</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Radio</td>
+            <td> <span>Got Focus</span>  <p>Lost Focus</p>
+                <input id="radioRed" name="color" type="radio" value="Men"
+                        class="inputRequired" />Men
+                <input id="radioGreen" name="color" type="radio" value="Female"
+                        class="inputRequired" />Female
+            
+            </td>
+        </tr>
+        <tr>
+            <td>Checkbox </td>
+            <td> <span>Got Focus</span>  <p>Lost Focus</p>
+               
+                <input id="chkBoxSocialMedia" type="checkbox" value="Checkme"
+                        class="inputRequired" />Checkme
+            </td>
+        </tr>
+       
+        <tr>
+            <td> <span>Got Focus</span>  <p>Lost Focus</p>
+                <input id="btnSubmit" type="button" value="Submit" />
+                <input id="btnSubmit" type="button" value="reset" />
+            </td>
+            <td>
+              <div id="divResult"></div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <script>
+        $(document).ready(function () {
+    $('.inputRequired').change(function () {
+        var selectedValue = $(this).val();
+      $('#divResult').html(selectedValue).fadeToggle(1400);
+    });
+    $( 'td').focusin(function() {
+  $( this ).find( "span" ).css( "display", "inline" ).fadeOut( 1000 );
+});
+$( 'td' ).focusout(function() {
+  $( this ).find( "p" ).css( "display", "inline" ).fadeOut( 1000 );
+});
+});
+
+        </script>
+</body>
+</html>

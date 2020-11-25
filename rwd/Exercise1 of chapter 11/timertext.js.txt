@@ -1,0 +1,7 @@
+var i=30;
+function time(){
+    self.postMessage(i);
+    i=i-1;
+    setTimeout("time()",1000);
+}
+time();

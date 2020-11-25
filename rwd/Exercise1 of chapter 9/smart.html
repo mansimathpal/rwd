@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>PizzaaBud App </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>        
+        <link rel='stylesheet' href='Scripts/jquery.mobile-1.4.5.css'/>
+        <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+        <script src='Scripts/jquery.mobile-1.4.5.min.js'></script>        
+        <style>
+          .custombackground {           
+            background:cyan;          
+          }       
+            .customfont {font-family: Verdana; color: #000;
+                       
+          }  
+          .mansi {
+              width: 5%;
+          }  
+              
+         </style>
+    </head>
+    <body>
+
+        <div id="vegpizzas" data-role="page" class='custombackground'>     
+             <header data-role="header" data-position="fixed" data-theme="b">
+              <img class="mansi" src="mansi.png" alt="Header Image" style="float:left;display:inline"/>
+                 <div data-role="navbar">   
+                    <a href="register.html" data-role="button" data-inline="true">Register</a>
+                    <a href="contactUs.html" data-role="button" data-inline="true" data-transition="pop">Contact Us</a>
+                    <a href="aboutUs.html" data-role="button" data-inline="true" data-transition="flip">About Us</a>             
+                </div>
+            </header>  
+           <div data-role="collapsible" data-collapsed="true" class="customfont"> 
+             <h4>Smart Phones:</h4>             
+               <ul data-role="listview" data-inset="true" data-autodividers="true" >
+                
+                  <li>
+                      <img src="i.jpg" alt=""/> 
+                      <h3 style='margin-left: 5px'>C_7 plus</h3>
+                      <p><strong>$3120</strong></p>
+                  </li>
+                   <li>
+                      <img src="i.jpg" alt=""/> 
+                      <h3 style='margin-left: 5px'>Motorola</h3>
+                       <p><strong>$280</strong></p>
+                   </li>
+                   <li>
+                      <img src="i.jpg" alt="Simply Veg"/>
+                      <h3 style='margin-left: 5px'>Iphone XR (126GB)</h3>
+                       <p><strong>$22000</strong></p>
+                  </li>
+                  <li>
+                      <img src="i.jpg" alt="Tangy Tomato"/> 
+                      <h3 style='margin-left: 5px'>Iphone Xr</h3>
+                      <p><strong>$2000</strong></p>
+                  </li>
+            
+               </ul>      
+             </div>     
+          </div>   
+             <footer data-role="footer" data-position="fixed" data-theme="b">
+              <h3>© Copyright - Mansi Mathpal 2019 </h3>
+             </footer>       
+       </div>
+   </body>
+</html>

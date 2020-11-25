@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="online.css"></link>
+</head>
+    <style>
+        body {background-color:rgb(198, 240, 84) ;}
+  
+  </style>
+  <body>
+<div class="mainDiv">
+      <div class="container1">
+          <img src="online.jpg" width="1250px" height="300px" ></img>
+      </div>
+  
+      <div class="center">
+        <b><h1>OnlineFoodOrder</h1></b>
+      </div>
+        <div class="top-right">
+            <b>Register</b>
+        </div>
+</div>
+<form>
+    <b><p style="font-size:15pt;">Name: </p></b><Input type="text" name="" size="20" maxlength="30">
+    <br>
+    <br>
+
+    <Label for="orderfor"><b><p style="font-size:15pt;"> Delivery Address: </p></b</Label>
+    <TEXTAREA rows="6" cols="30" ID="orderfor">
+    </TEXTAREA>
+    <br>
+    <br>
+
+    <Label for="food"><b><p style="font-size:15pt;">Food Choice: </p><b></Label>
+        <Input list="foo" name="foo" ID="food">
+        <DATALIST ID="foo">
+          <OPTION value="Burger">
+          <OPTION value="Pizza">
+          <OPTION value="Spring Roll">
+          <OPTION value="Pasta">
+          <OPTION value="Manchurian">
+          <OPTION value="Chowmein">
+          <OPTION value="Fried Rice">
+          <OPTION value="Chilli Potato">
+        <br>
+        <br>
+        </DATALIST>
+
+    <b><p style="font-size:15pt;">Quantity: </p></b><Input type="text" name="" size="20" maxlength="30">
+    <br>
+    <br>
+    
+    <b><p style="font-size:15pt;">Amount: </p></b><Input type="text" name="" size="20" maxlength="30">
+    <br>
+    <br>
+    
+    <button onclick="myFunction()" id="myBtn">Order</button>
+    <button onclick="myFunction()" id="myBtn">Cancel</button>
+
+    <h1><a href="Track your order.html">Track your order</a></b></h1>
+    
+</form>
+</body>
+</html>

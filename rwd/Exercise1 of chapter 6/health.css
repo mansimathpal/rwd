@@ -1,0 +1,237 @@
+ 
+#header {
+    background-color:white;
+    width: auto;
+    height:150px;
+    margin:0px;
+    background-image: url(grass.jpg);
+    }
+ #header .align{
+     float:right;
+     
+ }   
+ #form{
+    padding: 25%;
+    border: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+    background-color:whitesmoke;
+    margin:10%;
+    width: fit-content;
+} 
+
+
+.small{
+    width:5%;
+}  
+
+#navbar ul   {
+         
+    padding: 1%;
+    list-style-type: none;
+    text-align: center;
+    background-color:black;
+    
+    margin: 2%;
+    border-radius: 5px;
+     
+    }
+    #navbar ul  li  {
+         
+        display: inline;
+        text-decoration: dotted;
+        
+         
+        }
+         
+#navbar ul li a {
+       
+    text-decoration: dotted;
+    font-family:Arial;
+    padding: .2em 1em;
+    color: #fff;
+    background-color: #000;
+    }
+ #navbar ul li a:hover{
+    background-color: teal;
+    color:white;
+
+ }    
+ .main{
+     margin:2%;
+     padding: 3%;
+     height:auto;
+ }
+ .main p{
+     text-decoration: none;
+  
+ } 
+.main .images{
+    float:right;
+    opacity: 1;
+width:20%;
+height:10%;
+margin-top: -5%;
+    padding: 2%;
+    margin-left: 2%;
+    border:2px solid black;
+    
+}
+.main .images:hover{
+  opacity: 0.5;
+}
+.main .images1{
+    float:right;
+    opacity: 1;
+    margin-top: 1%;
+    margin-right: 0px;
+    width:20%;
+    height:10%;
+    border:2px solid black;
+    
+    padding: 20px;
+    
+}
+.main .images1:hover{
+    opacity: 0.4;
+  }
+.main .images2{
+    float:right;
+    opacity: 1;
+    margin-top: -5%;
+    margin-right: 0px;
+    width:20%;
+    height:10%;
+    border:2px solid black;
+    
+    padding: 20px;
+    
+}
+.main .images2:hover{
+    opacity: 0.4;
+  }
+.main .images3{
+    float:right;
+    opacity: 1;
+    margin-top: -5%;
+    margin-right: 0px;
+    width:20%;
+    height:10%;
+    border:2px solid black;
+    
+    padding: 20px;
+    
+}
+.main .images3:hover{
+    opacity: 0.4;
+  }
+.baby{
+    padding:2%;
+    
+    margin:0px;
+} #babies ul li{
+   text-align: left;
+   text-decoration: none;
+   margin-left: 2%;
+   display: block;
+   background-color: white;
+   width:50%;
+}
+#babies ul {
+    background-color: white;
+}
+.supply{
+    padding:1%;
+    margin:0px;
+} #Supplements ul li{
+   text-align: left;
+   text-decoration: underline;
+   margin-left: 2%;
+   display: block;
+   background-color: white;
+   width:100%;
+}
+#Supplements ul {
+    background-color: white;
+}
+.Beauty{
+    padding:2%;
+   
+    margin:0px;
+}
+ #Beautyplus ul li{
+   text-align: left;
+   text-decoration: underline;
+   margin-left: 2%;
+   display: block;
+   background-color: white;
+   width:100%;
+}
+#Beautyplus ul {
+    background-color: white;
+}
+.Herbs{
+    padding:2%;
+    
+    margin:0px;
+} #Herbsproducts ul li{
+   text-align: left;
+   text-decoration: underline;
+   margin-left: 2%;
+   display: block;
+   background-color: white;
+   width:100%;
+}
+#Herbsproducts ul {
+    background-color: white;
+}
+#footer{
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+    background-color: burlywood;
+}
+.img1{
+    width:5%;
+}
+.menu{
+    display: none;
+}
+.show1{
+    display: none;
+}
+
+@media screen and (max-width:960px)
+{
+    .menu{
+        display: block;
+        width:10%;
+        float:right;
+        background-color: crimson;
+        color: darkseagreen;
+        
+    }
+   
+
+#notshow{
+    display: none;
+}
+.main{
+     margin:1%;
+     padding: 1%;
+     height:auto;
+ }
+ .main .images{
+    float:right;
+    opacity: 1;
+width:20%;
+height:auto;
+margin-top: -15%;
+    padding: 1%;
+    margin-left: 2%;
+    border:2px solid black;
+    
+}
+
+}

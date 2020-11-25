@@ -1,0 +1,151 @@
+.mainDiv
+{
+	background-color:skyblue;
+
+}
+
+.container
+{
+position: relative;
+text-align: center;
+color: white;
+}
+
+
+.top-left
+{
+position:absolute;
+top:6%;
+left:2%;
+font-size:35px;
+}
+
+.top-right
+{
+position: absolute;
+top: 25%;
+right: 4%;
+font-size:25px;
+}
+
+.linkContainer
+{
+	
+}
+
+.link
+{
+text-align:center;
+word-spacing:45px;
+font-size:30px;	
+background-color:YELLOWgreen;
+}
+
+.link:hover
+{
+background-color:yellow;
+}
+
+.intro
+{
+font-size:30px;	
+}
+
+.para
+{
+font-size:25px;
+}
+
+.column
+
+{   
+	 float:left;
+	
+}
+
+.left
+{
+	width: 75%;
+	font-size:20px;
+}
+
+.right
+{
+	width: 25%;
+	padding: 90px 0px 0px 0px;
+}
+
+.supplement
+
+{   
+	 float:left;
+	
+}
+
+.left
+{
+	width: 75%;
+	font-size:20px;
+}
+
+.right
+{
+	width: 25%;
+	padding: 90px 0px 0px 0px;
+}
+
+.beautyProducts
+
+{   
+	 float:left;
+	
+}
+
+.left
+{
+	width: 75%;
+	font-size:20px;
+}
+
+.right
+{
+	width: 25%;
+	padding: 90px 0px 0px 0px;
+}
+
+.herbsProducts
+
+{   
+	 float:left;
+	
+}
+
+.left
+{
+	width: 75%;
+	font-size:20px;
+}
+
+.right
+{
+	width: 25%;
+	padding: 90px 0px 0px 0px;
+}
+
+.all
+{
+
+font-size:30px;
+background-color:tomato;
+}
+.all:hover
+{
+background-color:lightgreen;
+}
+
+
+
+
+
+
+

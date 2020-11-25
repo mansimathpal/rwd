@@ -1,0 +1,23 @@
+onmessage = function(e) {
+    console.log('Worker: Message received from main script');
+    let result = 0;
+    for(var i = e.data[0]; i <e.data[1]; i++)
+		{
+			for(var j = 2; j < i; j++)
+			{
+				if(i % j == 0)
+				{
+				var	count = 0;
+					break;
+				}
+				else
+				{
+					count = 1;
+				}
+			}
+			if(count == 1)
+			{ 
+				result=i;
+			}
+		}
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>PizzaaBud App </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>        
+        <link rel='stylesheet' href='Scripts/jquery.mobile-1.4.5.css'/>
+        <script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+        <script src='Scripts/jquery.mobile-1.4.5.min.js'></script>        
+        <style>
+          .custombackground {           
+            background: #ffd800;    
+            background-image: url(i.jpg);      
+          }       
+            .customfont {font-family: Verdana; color: #000;
+                       
+          }  
+          .mansi{
+width: 5%;
+          }   
+          p{
+              color: blueviolet;
+          }
+            h2{
+                color:gold;
+            }
+              
+         </style>
+
+    
+    </head>
+    <body>
+        <div id="main" data-role="page" class='custombackground'>     
+         
+            <header data-role="header" data-position="fixed" data-theme="b">
+              <img class="mansi" src="mansi.png" alt="Header Image" style="float:left;display:inline"/>                
+                <div data-role="navbar">   
+                    <a href="register.html" data-role="button" data-inline="true">Register</a>
+                    <a href="contactUs.html" data-role="button" data-inline="true" data-transition="pop">Contact Us</a>
+                    <a href="aboutUs.html" data-role="button" data-inline="true" data-transition="flip">About Us</a>             
+                </div>
+            </header>
+   <div id="content" data-role="main" class="ui-content customfont">            
+        <h2> Welcome to MobileHub </h2>
+            
+             <p> We at MobileHub have a wide collection of latest smartphones and the tablests at the discounted rates. 
+                The MobileStore sells mobile phones of domestic and international brands like Apple, BlackBerry, HTC, Karbonn Mobiles, Micromax, Motorola, Spice, Samsung, Sony, VIVO, OPPO and Vodafone.
+                 It also provides online mobile and DTH credit recharge through its website.
+             </p>
+
+             <h2> Select a Product Category</h2>               
+             <ul data-role="listview" data-inset="true">
+	           <li><a href="smart.html">Smart Phone</a></li>
+	           <li><a href="tabs.html">Tablet</a></li>
+             </ul>
+         </div>      
+            <footer data-role="footer" data-position="fixed" data-theme="a">   
+                   <h2>© Copyright - Mansi Mathpal 2019 </h2>     
+             </footer>
+       </div>  
+   </body>
+</html>

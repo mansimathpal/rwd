@@ -1,0 +1,53 @@
+.mainDiv
+{
+
+}
+
+.heading
+{
+font-size:40px;
+color: green;
+}
+.heading:hover
+{
+color: red;
+}
+
+.link
+{
+font-size: 30px;
+text-align:center;
+word-spacing:110px;
+background-color: blue;
+}
+.link:hover
+{
+background-color: red;
+}
+.image
+{
+padding:0px 10px 0px 200px;
+}
+.paragraph
+{
+width: 575px;
+background-color:yellowgreen;
+padding: 10px 100px 0px 200px;
+border: 5px solid red;
+margin: 180px;
+}
+.paragraph:hover
+{
+background-color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+

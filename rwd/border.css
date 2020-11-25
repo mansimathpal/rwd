@@ -1,0 +1,8 @@
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.jpg) 50 round;
+    -o-border-image: url(border.jpg) 50 round; 
+    border-image: url(border.jpg) 50 round;
+    
+  }   
